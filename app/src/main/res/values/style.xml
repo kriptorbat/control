@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@android:color/holo_green_light</item>
+        <item name="android:textColorPrimary">@android:color/holo_green_light</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/appColor1</item>
+        <item name="android:textColor">@color/appColor3</item>
+        <item name="android:textColorPrimary">@color/appColor3</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/ButtonStyle</item>
+    </style>
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/appColor3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/appColor3</item>
+        <item name="android:shadowRadius">6</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

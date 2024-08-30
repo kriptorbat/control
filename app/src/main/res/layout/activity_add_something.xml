@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColor1"
+    android:orientation="vertical"
+    tools:context=".view.addSomething.AddSomethingActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Событие"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:text="Время начала события"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/appColor3">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:shadowColor="@color/appColor2"
+        android:shadowRadius="9"
+        android:text="6:00"
+        android:textColor="@color/appColor3"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Зоголовок и описание события"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/appColor3">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="Заголовок"
+        android:inputType="textCapSentences"
+        android:minWidth="300dp"
+        android:minHeight="48dp"
+        android:paddingStart="7dp"
+        android:textColorHint="#98A2DF" />
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_inpit_end"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minWidth="300dp"
+        android:minHeight="120dp"
+        android:paddingStart="7dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Маркер для события"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/appColor3">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rgColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_radio_group"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:autoText="false"
+            android:buttonTint="@color/color1"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rbPurple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/color2"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rbBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/color3"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rbWhiteBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/color4"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rbWhiteGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/color5"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rbYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/color6"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rbGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/color7"
+            android:minHeight="48dp"
+            android:theme="@style/RadioButtonStyle" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/appColor2"
+            android:fontFamily="sans-serif-light"
+            android:shadowColor="@color/appColor3"
+            android:shadowRadius="4"
+            android:text="Добавить"
+            android:textColor="@color/appColor3" />
+    </FrameLayout>
+</LinearLayout>

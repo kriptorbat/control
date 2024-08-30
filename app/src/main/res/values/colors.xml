@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color1">#FF0000</color>
+    <color name="color2">#D900FF</color>
+    <color name="color3">#002AFF</color>
+    <color name="color4">#00FFEA</color>
+    <color name="color5">#26FF00</color>
+    <color name="color6">#FFD500</color>
+    <color name="color7">#707070</color>
+    <color name="appColor1">#242B51</color>
+    <color name="appColor2">#6D75A6</color>
+    <color name="appColor3">#D9DDF8</color>
+    <color name="appColor4">#FF98A2DF</color>
+    <color name="hack">#00D9DDF8</color>
+</resources>
